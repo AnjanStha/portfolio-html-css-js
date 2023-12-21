@@ -10,7 +10,7 @@
 <body>
     <script src="script.js"></script>
 
-    <nav id="dekstop-nav">
+    <nav id="desktop-nav">
         <div class="logo">Anjan Shrestha</div>
         <div>
             <ul class="nav-links">
@@ -38,6 +38,40 @@
             </div>
         </div>
     </nav>
+
+    <section id="profile">
+        <div class=" section__pic-container">
+            <img src="./assets/profile-pic.png" alt="anjan shrestha profile picture">
+
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Anjan Shrestha</h1>
+            <p class="section__text__p2">Data Engineer</p>
+        
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2"
+            onclick="window.open('./assets/AnjanCV.pdf')"
+            >Download CV</button>
+
+            <button 
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'"
+            >Contact</button>
+        </div>
+        <div id ="socials-container">
+            <img src="./assets/linkedin.png" alt=" Anjan linkedIn profile"
+            class="icon" onclick="location.href='https://linkedin.com/AnjanShreshta'"></img>
+
+            <img src="./assets/github.png" alt=" Anjan github profile"
+            class="icon" onclick="location.href='https://github.com/AnjanStha'"></img>
+
+
+        </div>
+        
+        </div>
+    </section>
     
 </body>
 </html>
