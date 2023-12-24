@@ -101,4 +101,11 @@
         text-align: justify;
     }
 
+    .thumb-slider {
+        display: none;
+    }
+    .main-slider {
+        width: 100%;
+    }
+
 }

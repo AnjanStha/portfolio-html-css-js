@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Anjan Shrestha</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- for swiper js cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css">
 
 
 
@@ -83,34 +84,157 @@
         </div>
         
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./#gallery'"
+        >
+
     </section>
 
     <section id="gallery">
+        <p class="section__text__p1">Let's go back in time</p>
+        <h1 class="title">Gallery</h1>
 
-
+            
         <div class="banner-area">
             <div class="swiper-container main-slider">
                 <div class="swiper-wrapper">
-                <!-- Slides -->
+                    <!-- Slides -->
                     <div class="swiper-slide">
-                        <div class="swiper-image">
-                            <div class="swiper-image-inner" style="background:url(assets/img11.webp)">
+                        <div class="swiper-image" data-swiper-parallax-x ="35%">
+                            <div class="swiper-image-inner" style="background:url(assets/img_1.jpg)">
                                 <div class="banner-content">
-                                    <h2>Slide 1</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur
-                                         adipisicing elit. Eos, eaque!</p>
-
+                                    <h2 data-swiper-parallax-duration="1500" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-700">Slide 
+                                    1</h2>
+                                    <p data-swiper-parallax-duration="1700" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, eaque!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-image" data-swiper-parallax-x ="35%">
+                            <div class="swiper-image-inner" style="background:url(assets/img_2.jpg)">
+                                <div class="banner-content">
+                                    <h2 data-swiper-parallax-duration="1500" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-700">Slide 
+                                    2</h2>
+                                    <p data-swiper-parallax-duration="1700" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, eaque!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-image" data-swiper-parallax-x ="35%">
+                            <div class="swiper-image-inner" style="background:url(assets/img_3.jpg)">
+                                <div class="banner-content">
+                                    <h2 data-swiper-parallax-duration="1500" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-700">Slide 
+                                    3</h2>
+                                    <p data-swiper-parallax-duration="1700" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, eaque!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-image" data-swiper-parallax-x ="35%">
+                            <div class="swiper-image-inner" style="background:url(assets/img_4.jpg)">
+                                <div class="banner-content">
+                                    <h2 data-swiper-parallax-duration="1500" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-700">Slide 
+                                    4</h2>
+                                    <p data-swiper-parallax-duration="1700" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, eaque!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-image" data-swiper-parallax-x ="35%">
+                            <div class="swiper-image-inner" style="background:url(assets/img_5.jpg)">
+                                <div class="banner-content">
+                                    <h2 data-swiper-parallax-duration="1500" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-700">Slide 
+                                    5</h2>
+                                    <p data-swiper-parallax-duration="1700" 
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax="-1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, eaque!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <!-- If we need navigation buttons -->
+
+                <!-- Navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+
+        
+            <div class="swiper-container thumb-slider">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide-thumb" style="background-image:url(assets/img_1.jpg)">
+                            <span>Slide 1</span>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-thumb" style="background-image:url(assets/img_2.jpg)">
+                            <span>Slide 2</span>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-thumb" style="background-image:url(assets/img_3.jpg)">
+                            <span>Slide 3</span>
+
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <div class="slide-thumb" style="background-image:url(assets/img_4.jpg)">
+                            <span>Slide 4</span>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-thumb" style="background-image:url(assets/img_5.jpg)">
+                            <span>Slide 5</span>
+
+                        </div>
+                    </div>
+                    </div>
+                    
+            </div>
+
         </div>
 
+
+     
 
 
         <img src="./assets/arrow.png" alt="Arrow icon"
@@ -406,36 +530,9 @@
 
     </footer>
 
-    <div class="banner-area">
-        <div class="swiper-container main-slider">
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="swiper-image">
-                        <div class="swiper-image-inner" style="background:url(assets/img11.webp)">
-                            <div class="banner-content">
-                                <h2>Slide 1</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur
-                                     adipisicing elit. Eos, eaque!</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-
-    
- 
-
+   
+   <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
- 
 </body>
 </html>
