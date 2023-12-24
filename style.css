@@ -149,7 +149,7 @@ a:hover {
 
 /* Section */
 section {
-    /* background-color: aqua; */
+     /* background-color: aqua;  */
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -194,11 +194,25 @@ section {
     font-size: 1.75rem;
     margin-bottom: 1rem;   
 }
+.section__text__p3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem; 
+    text-align:center;
+
+}
+
 
 .title {
     font-size: 3rem;
     text-align:center;
 }
+
+ /* Style for default cursor */
+ .typed-cursor {
+    display: inline;
+    vertical-align: top; /* Align the cursor with the text */
+    margin-right: 2px; /* Adjust spacing between cursor and text */
+  }
 
 #socials-container {
     display: flex;
@@ -260,6 +274,13 @@ section {
 
 .btn-container {
     gap:1rem;
+}
+
+/* Gallery Section */
+
+#gallery {
+    background-color:aqua;
+    position: relative;
 }
 
 
