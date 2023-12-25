@@ -329,6 +329,9 @@ section {
     width: 400px;
     margin: atuo 0;
 }
+.text-container {
+    text-align:justify;
+}
 
 
 /* Experience section */

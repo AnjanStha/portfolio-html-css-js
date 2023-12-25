@@ -34,6 +34,10 @@ let mainSliderOptions = {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000, // Set the delay in milliseconds (e.g., 3000ms = 3 seconds)
+        disableOnInteraction: false, // Allow manual interaction to stop autoplay
     }
 };
 
