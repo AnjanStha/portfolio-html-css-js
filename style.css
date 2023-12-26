@@ -60,6 +60,13 @@ a:hover {
 .logo{
     font-size: 2rem;
 }
+.logo-img {
+    height: 45px;
+}
+.logo-img-2{
+    display:none;
+}
+
 .logo:hover {
     cursor: default;
 }
@@ -72,6 +79,7 @@ a:hover {
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    top:0;
 }
 .hamburger-icon {
     display: flex;
@@ -107,13 +115,6 @@ a:hover {
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
-.menu-links a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181,181,181);
-}
-
 
 .menu-links li {
     list-style: none;  

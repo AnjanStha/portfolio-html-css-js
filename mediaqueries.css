@@ -16,7 +16,41 @@
     }
     #hamburger-nav {
         display: flex;
+      
     }
+
+    .hamburger-menu {
+        position: relative;
+    }
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 999; /* Set a higher z-index value */
+        display: none; /* Hide initially */
+    }
+
+    .menu-links.open {
+        display: block; /* Display when open */
+        max-height: 300px;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 1000; /* Ensure icon is above other content */
+    }
+
+
     #experience,
     .experience-details-container {
         margin-top: 2rem;
@@ -47,15 +81,19 @@
     .title {
         font-size: 2rem;
     }
+    .logo-img {
+        height: 35px;
+    }
 
 }
 
 @media screen and (max-width: 600px){
+ 
     #contact {
-        height: 40%;
+        height: 40vh;
     }
     #footer {
-        height:30%;
+        height:30vh;
     }
     #profile {
         height: 83vh;
@@ -86,6 +124,13 @@
     .logo {
         font-size: 1.5rem;
     }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
     .section__pic-container {
         width: auto;
         height: 46vw;
@@ -107,5 +152,13 @@
     .main-slider {
         width: 100%;
     }
+    .logo-img {
+        display: none;
+    }
+    .logo-img-2 {
+        display: flex;
+        height: 25px;
+    }
+
 
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjan Shrestha</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -20,7 +21,9 @@
     
 
     <nav id="desktop-nav">
-        <div class="logo">Anjan Shrestha</div>
+        <div class="logo">
+        <img src="./assets/anjan_logo.png" alt="logo" class="logo-img">
+            </div>
         <div>
             <ul class="nav-links">
                 <li><a href="#gallery">Gallery</a></li>
@@ -33,7 +36,11 @@
 
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Anjan Shrestha</div>
+        <div class="logo">
+            <img src="./assets/anjan_logo.png" alt="logo" class="logo-img">
+            <img src="./assets/logo.png" alt="logo" class="logo-img-2">
+
+        </div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -41,11 +48,13 @@
                 <span></span>
             </div>
             <div class="menu-links ">
+                <ul>
                 <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#project" onclick="toggleMenu()">Project</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
