@@ -62,6 +62,8 @@ mainSlider.controller.control = thumbSlider;
 thumbSlider.controller.control = mainSlider;
 
 // Function to toggle themes
+
+
 function toggleTheme() {
     var body = document.body;
     var desktopIcon = document.getElementById("theme-icon");
@@ -69,6 +71,14 @@ function toggleTheme() {
     var desktopLogo = document.getElementById("logo-img");
     var desktopLogo2 = document.getElementById("logo-img-2");
     var github = document.getElementById("github_logo");
+    var linkedin = document.getElementsByClassName("linkedin_logo");
+    var arrow = document.getElementsByClassName("arrow");
+    var tick = document.getElementsByClassName("experience_icon");
+    var education = document.getElementById("education");
+    var experience = document.getElementById("experience_student");
+    var email = document.getElementById("email_icon");
+    
+    
    
 
     body.classList.toggle("dark-theme");
@@ -80,6 +90,22 @@ function toggleTheme() {
         desktopLogo.src = "./assets/anjan_logo_dark.png";
         desktopLogo2.src = "./assets/logo_dark.png";
         github.src = "./assets/github_dark.png";
+        education.src="./assets/education_white.png";
+        experience.src="./assets/experience_light.png";
+        email.src="./assets/email_light.png";
+
+        for (var i = 0; i < linkedin.length; i++) {
+            linkedin[i].src = "./assets/linkedin_light.png";
+        }
+        
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].src = "./assets/arrow_white.png";
+        }
+
+        for (var i = 0; i < tick.length; i++) {
+            tick[i].src = "./assets/checkmark_dark.png";
+        }
+       
        
     } else {
         desktopIcon.src = "./assets/moon.png";
@@ -87,6 +113,22 @@ function toggleTheme() {
         desktopLogo.src = "./assets/anjan_logo_light.png";
         desktopLogo2.src = "./assets/logo_light.png";
         github.src = "./assets/github.png";
+        linkedin.src="./assets/linkedin.png";
+        education.src="./assets/education.png";
+        experience.src="./assets/experience.png";
+        email.src="./assets/email.png";
+
+
+        for (var i = 0; i < linkedin.length; i++) {
+            linkedin[i].src = "./assets/linkedin.png";
+        }
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].src = "./assets/arrow.png";
+        }
+        for (var i = 0; i < tick.length; i++) {
+            tick[i].src = "./assets/checkmark.png";
+        }
+       
         // Change logo back to dark mode
        // desktopLogo.src = "./assets/anjan_logo.png";
      
