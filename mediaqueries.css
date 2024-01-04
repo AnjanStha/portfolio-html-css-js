@@ -22,13 +22,17 @@
     .hamburger-menu {
         position: relative;
     }
+    .menu-links a {
+        font-size: 1rem;
+    }
     .menu-links {
         position: absolute;
+        gap:1rem;
         top: 100%;
         right: 0;
-        background-color: white;
+        background-color: var(--primary-color);
         width: fit-content;
-        max-height: 0;
+       
         overflow: hidden;
         transition: all 0.3s ease-in-out;
         z-index: 999; /* Set a higher z-index value */
@@ -152,10 +156,10 @@
     .main-slider {
         width: 100%;
     }
-    .logo-img {
+    #logo-img {
         display: none;
     }
-    .logo-img-2 {
+    #logo-img-2 {
         display: flex;
         height: 30px;
     }

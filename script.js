@@ -61,4 +61,42 @@ let thumbSlider = new Swiper(thumbSliderSelector, thumbSliderOptions);
 mainSlider.controller.control = thumbSlider;
 thumbSlider.controller.control = mainSlider;
 
+// Function to toggle themes
+function toggleTheme() {
+    var body = document.body;
+    var desktopIcon = document.getElementById("theme-icon");
+    var hamburgerIcon = document.querySelector("#hamburger-nav #ham-theme-icon");
+    var desktopLogo = document.getElementById("logo-img");
+    var desktopLogo2 = document.getElementById("logo-img-2");
+    var github = document.getElementById("github_logo");
+   
 
+    body.classList.toggle("dark-theme");
+
+    if (body.classList.contains("dark-theme")) {
+        desktopIcon.src = "./assets/sun.png";
+        hamburgerIcon.src = "./assets/sun.png";
+        // Change logo to light mode
+        desktopLogo.src = "./assets/anjan_logo_dark.png";
+        desktopLogo2.src = "./assets/logo_dark.png";
+        github.src = "./assets/github_dark.png";
+       
+    } else {
+        desktopIcon.src = "./assets/moon.png";
+        hamburgerIcon.src = "./assets/moon.png";
+        desktopLogo.src = "./assets/anjan_logo_light.png";
+        desktopLogo2.src = "./assets/logo_light.png";
+        github.src = "./assets/github.png";
+        // Change logo back to dark mode
+       // desktopLogo.src = "./assets/anjan_logo.png";
+     
+    }
+}
+
+// Event listener for clicking the theme icon
+var icon = document.getElementById("theme-icon");
+icon.addEventListener("click", toggleTheme);
+
+// Event listener for clicking the theme icon in hamburger nav
+var hamburgerIcon = document.querySelector("#hamburger-nav #ham-theme-icon");
+hamburgerIcon.addEventListener("click", toggleTheme);

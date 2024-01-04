@@ -8,16 +8,29 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --primary-color: #fffffff0;
+    --secondary-color:#212121;
+
+.dark-theme {
+    --primary-color: #212121;
+    --secondary-color: #fffffff0;
+}
+}
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
 }
 html {
     scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--secondary-color);
+}
+h3 {
+    color: var(--secondary-color);
 }
 
 /* Transition */
@@ -45,7 +58,7 @@ nav {
 }
 
 a {
-    color: black;
+    color:var(--secondary-color);
     text-decoration: none;
     text-decoration: white;
 }
@@ -60,10 +73,10 @@ a:hover {
 .logo{
     font-size: 2rem;
 }
-.logo-img {
+#logo-img {
     height: 45px;
 }
-.logo-img-2{
+#logo-img-2{
     display:none;
 }
 
@@ -92,14 +105,14 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: var(--secondary-color);
     transition: all 0.3 ease-in-out;
 }
 .menu-links {
     position:absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color:  var(--primary-color);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -111,7 +124,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: var(--secondary-color);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -211,6 +224,7 @@ section {
 .title {
     font-size: 3rem;
     text-align:center;
+    color: var(--secondary-color);
 }
 
  /* Style for default cursor */
@@ -252,7 +266,7 @@ section {
 
 .btn-color-1, 
 .btn-color-2 {
-    border: rgb(53,53,53) 0.1rem solid;
+    border: var(--secondary-color) 0.1rem solid;
 }
 
 .btn-color-1:hover, 
@@ -262,20 +276,21 @@ section {
 
 .btn-color-1, 
 .btn-color-2:hover {
-  background:rgb(53,53,53);
-  color:white;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .btn-color-1:hover {
-    background: rgh(0,0,0);
+    background: var(--secondary-color);
 }
 
 .btn-color-2 {
     background:none;
+    color:  var(--secondary-color);
 }
 
 .btn-color-2:hover {
-    border:rgb(255,255,255) 0.1rem solid;
+    border: var(--primary-color) 0.1rem solid;
 }
 
 .btn-container {
@@ -319,9 +334,9 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background:  var(--primary-color);
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
+    border:var(--secondary-color) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
 }
@@ -382,7 +397,7 @@ article .icon {
 }
 .color-container {
     border-color: rgb(163,163,163);
-    background:rgb(250,250,250);
+    background: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Horizontal centering */
@@ -398,7 +413,7 @@ article .icon {
 }
 .project-title {
     margin: 1rem;
-    color: black;
+    color: var(--secondary-color);
 }
 
 .project-sub-title {
@@ -408,7 +423,7 @@ article .icon {
     margin-bottom: 1rem;
 }
 .project-btn {
-    color: black;
+    color: var(--secondary-color);
     border-color: rgb(163,163,163);
     font-weight: 600;
     transition: all 300ms ease;
@@ -451,9 +466,9 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border:rgb(53,53,53) 0.1rem solid;
+    border:var(--secondary-color) 0.1rem solid;
     border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    background: var(--primary-color);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -477,8 +492,6 @@ article .icon {
 
 
 
-
-
 /* footer section */
 
 footer {
@@ -487,4 +500,20 @@ footer {
 }
 footer p {
     text-align:center;
+}
+
+/* for dark and light them */
+#theme-icon {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+#ham-theme-icon {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
 }
