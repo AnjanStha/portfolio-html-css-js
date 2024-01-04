@@ -70,6 +70,7 @@ function toggleTheme() {
     var hamburgerIcon = document.querySelector("#hamburger-nav #ham-theme-icon");
     var desktopLogo = document.getElementById("logo-img");
     var desktopLogo2 = document.getElementById("logo-img-2");
+    var desktopLogo3 = document.getElementById("logo-img-3");
     var github = document.getElementById("github_logo");
     var linkedin = document.getElementsByClassName("linkedin_logo");
     var arrow = document.getElementsByClassName("arrow");
@@ -89,6 +90,7 @@ function toggleTheme() {
         // Change logo to light mode
         desktopLogo.src = "./assets/anjan_logo_dark.png";
         desktopLogo2.src = "./assets/logo_dark.png";
+        desktopLogo3.src = "./assets/anjan_logo_dark.png";
         github.src = "./assets/github_dark.png";
         education.src="./assets/education_white.png";
         experience.src="./assets/experience_light.png";
@@ -112,6 +114,7 @@ function toggleTheme() {
         hamburgerIcon.src = "./assets/moon.png";
         desktopLogo.src = "./assets/anjan_logo_light.png";
         desktopLogo2.src = "./assets/logo_light.png";
+        desktopLogo3.src = "./assets/anjan_logo_light.png";
         github.src = "./assets/github.png";
         linkedin.src="./assets/linkedin.png";
         education.src="./assets/education.png";
