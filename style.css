@@ -73,11 +73,11 @@ a:hover {
 .logo{
     font-size: 2rem;
 }
-#logo-img {
+.logo-img {
     height: 2rem;
 }
 
-#logo-img-2{
+.logo-img-2{
     display:none;
 }
 
