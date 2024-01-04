@@ -74,11 +74,9 @@ a:hover {
     font-size: 2rem;
 }
 #logo-img {
-    height: 45px;
+    height: 40px;
 }
-#logo-img-3 {
-    height: 45px;
-}
+
 #logo-img-2{
     display:none;
 }
