@@ -12,10 +12,7 @@
     --primary-color: #fffffff0;
     --secondary-color:#212121;
 
-.dark-theme {
-    --primary-color: #212121;
-    --secondary-color: #fffffff0;
-}
+
 }
 
 body {
