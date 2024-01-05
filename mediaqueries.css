@@ -88,6 +88,9 @@
     .logo-img {
         height: 35px;
     }
+    .logo-img2 {
+        display:none;
+    }
 
 }
 
