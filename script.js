@@ -71,7 +71,6 @@ function toggleTheme() {
 
     var desktopLogo = document.getElementsByClassName("logo-img");
     var hamlogo = document.getElementById("logo-img2"); 
-        console.log(hamlogo);
     var github = document.getElementById("github_logo");
     var linkedin = document.getElementsByClassName("linkedin_logo");
     var arrow = document.getElementsByClassName("arrow");
