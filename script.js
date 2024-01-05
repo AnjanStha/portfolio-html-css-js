@@ -68,9 +68,10 @@ function toggleTheme() {
     var body = document.body;
     var desktopIcon = document.getElementById("theme-icon");
     var hamburgerIcon = document.querySelector("#hamburger-nav #ham-theme-icon");
-    var desktopLogo = document.getElementById("logo-img");
-    var desktopLogo2 = document.getElementById("logo-img-2");
-    var desktopLogo3 = document.getElementById("logo-img-3");
+
+    var desktopLogo = document.getElementsByClassName("logo-img");
+    var hamlogo = document.getElementById("logo-img2"); 
+        console.log(hamlogo);
     var github = document.getElementById("github_logo");
     var linkedin = document.getElementsByClassName("linkedin_logo");
     var arrow = document.getElementsByClassName("arrow");
@@ -88,13 +89,15 @@ function toggleTheme() {
         desktopIcon.src = "./assets/sun.png";
         hamburgerIcon.src = "./assets/sun.png";
         // Change logo to light mode
-        desktopLogo.src = "./assets/anjan_logo_dark.png";
-        desktopLogo2.src = "./assets/logo_dark.png";
-        desktopLogo3.src = "./assets/anjan_logo_dark.png";
+        hamlogo.src ="./assets/logo_dark.png";
         github.src = "./assets/github_dark.png";
         education.src="./assets/education_white.png";
         experience.src="./assets/experience_light.png";
         email.src="./assets/email_light.png";
+
+        for (var i = 0; i < desktopLogo.length; i++) {
+            desktopLogo[i].src = "./assets/anjan_logo_dark.png";
+        }   
 
         for (var i = 0; i < linkedin.length; i++) {
             linkedin[i].src = "./assets/linkedin_light.png";
@@ -112,14 +115,17 @@ function toggleTheme() {
     } else {
         desktopIcon.src = "./assets/moon.png";
         hamburgerIcon.src = "./assets/moon.png";
-        desktopLogo.src = "./assets/anjan_logo_light.png";
-        desktopLogo2.src = "./assets/logo_light.png";
-        desktopLogo3.src = "./assets/anjan_logo_light.png";
+
+        hamlogo.src = "./assets/logo_light.png";
         github.src = "./assets/github.png";
         linkedin.src="./assets/linkedin.png";
         education.src="./assets/education.png";
         experience.src="./assets/experience.png";
         email.src="./assets/email.png";
+
+        for (var i = 0; i < desktopLogo.length; i++) {
+            desktopLogo[i].src = "./assets/anjan_logo_light.png";
+        }   
 
 
         for (var i = 0; i < linkedin.length; i++) {
