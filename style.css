@@ -11,6 +11,13 @@
 :root{
     --primary-color: #fffffff0;
     --secondary-color:#212121;
+    --third-color: rgb(85,85,85);
+
+.dark-theme {
+        --primary-color: #212121;
+        --secondary-color: #fffffff0;
+        --third-color: #e7e3e3cf;
+    }
 
 
 }
@@ -24,7 +31,7 @@ html {
 }
 
 p {
-    color: var(--secondary-color);
+    color: var( --third-color);
 }
 h3 {
     color: var(--secondary-color);
@@ -358,7 +365,7 @@ section {
     position: relative;
 }
 .experience-sub-title {
-    color: rgb(85,85,85);
+    color: var( --third-color);
     font-weight:600;
     font-size:1.75rem;
     margin-bottom: 2rem;
@@ -415,7 +422,7 @@ article .icon {
 }
 
 .project-sub-title {
-    color: rgb(85,85,85);
+    color: var( --third-color);
     font-weight:400;
     font-size:1rem;
     margin-bottom: 1rem;
