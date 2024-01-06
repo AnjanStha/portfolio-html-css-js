@@ -150,12 +150,4 @@ function toggleTheme() {
     }
 }
 
-// Event listener for clicking the theme icon
-var icon = document.getElementById("theme-icon");
-icon.addEventListener("click", toggleTheme);
-
-// Event listener for clicking the theme icon in hamburger nav
-var hamburgerIcon = document.querySelector("#hamburger-nav #ham-theme-icon");
-hamburgerIcon.addEventListener("click", toggleTheme);
-
 
